@@ -102,5 +102,14 @@
 		  "# TODO: (${1:author}) ${0:description}"
 		],
 		"description": "creates a local readonly variable ie. a constant"
+	},
+	"for": {
+		"prefix": "for",
+		"body": [
+			for $1 in $2; do
+			"\t$0",
+			"done"
+			],
+		"description": "creates a multiline for loop"
 	}
 }
